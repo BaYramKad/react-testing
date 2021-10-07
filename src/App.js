@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import data from './q.json'
+import { TestingPage } from './components/TestingPage';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [testing, setTesting] = React.useState([])
+  const [right, setRight] = React.useState(0)
+  const [wrong, setWrong] = React.useState(0)
+
+  React.useEffect(() => {setTesting(data)}, [])
+  
+  return (<div>
+      {
+        testing.map((item, i) => <TestingPage 
+        {...item} 
+        key={i} 
+        setRight={setRight}
+        setWrong={setWrong}
+        />)
+      }
+      <hr/>
+      <div>
+        <p> Парвельных: {right} </p>
+        <p> Не правельных: {wrong} </p>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;

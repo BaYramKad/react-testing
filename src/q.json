@@ -1,0 +1,83 @@
+[
+  {
+    "question": "Сколько будет 2 умножить на 2?",
+    "answers": [
+      {
+        "answer": "4",
+        "correct": true
+      },
+      {
+        "answer": "3",
+        "correct": false
+      },
+      {
+        "answer": "5",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто создал React?",
+    "answers": [
+      {
+        "answer": "Марк Цукерберг",
+        "correct": false
+      },
+      {
+        "answer": "Джордан Валке",
+        "correct": true
+      },
+      {
+        "answer": "Facebook",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "MongoDB это",
+    "answers": [
+      {
+        "answer": "Документоориентированная система управления базами данных",
+        "correct": true
+      },
+      {
+        "answer": "Реляционная система управления базами данных",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что такое React?",
+    "answers": [
+      {
+        "answer": "React - это JavaScript фреймворк.",
+        "correct": false
+      },
+      {
+        "answer": "React - это библиотека JavaScript.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Каковы основные характеристики React?",
+    "answers": [
+      {
+        "answer": "Компиляция на стороне сервера",
+        "correct": false
+      },
+      {
+        "answer": "Однонаправленный поток данных",
+        "correct": true
+      },
+      {
+        "answer": "Компилирует приложение в JavaScript",
+        "correct": false
+      },
+      {
+        "answer": "Виртуальный ДОМ",
+        "correct": true
+      }
+    ]
+  }
+]
